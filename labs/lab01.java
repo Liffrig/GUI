@@ -1,12 +1,13 @@
+package labs;
 import Libra.*;
 
-public class Main {
+public class lab01 {
 
    final static double epsilon = 0.00001d;
 
    public static void main(String[] args) {
 
-      // Zadania 11 - 12 III
+      // Zadania 11
       Assistant assistant = new Assistant();
       assistant.printSeparator("Zadanie 1");
 
@@ -147,7 +148,7 @@ interface FunDD {
    double fun(double x);
 
    static double xminim(FunDD f, double a, double b) {
-     if (Math.abs(a - b) > Main.epsilon) {
+     if (Math.abs(a - b) > lab01.epsilon) {
 
       double mid = (a+b)/2;
       double fa = f.fun(a);
